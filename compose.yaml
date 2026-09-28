@@ -7,7 +7,7 @@ services:
   app:
     build: .
     ports: ["8801:8000"]                      # 8801: the port the platform's owner gave you
-    volumes: ["/srv/appdata/myapp/data:/data"]
+    volumes: ["/srv/appdata/hello-lab/data:/data"]
     read_only: true
     tmpfs: [/tmp]
     restart: unless-stopped
